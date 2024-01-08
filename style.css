@@ -1,0 +1,112 @@
+:root {
+  --blue: #537fe7;
+  --white: #f3f3f3;
+  --light-black: #3a4750;
+  --black: #181823;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  direction: rtl;
+  background-color: var(--white);
+  margin-top: 56px;
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: var(--blue);
+}
+.navbar-brand {
+  color: var(--white);
+}
+.navbar-toggler {
+  color: var(--white);
+  border-color: var(--white);
+  background-color: var(--white);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.dropdown-item {
+  color: var(--black);
+}
+.can {
+  background-color: var(--blue);
+}
+.can-head {
+  background-color: var(--blue);
+}
+.offcanvas-title {
+  color: var(--white);
+}
+.nav-item .nav-link {
+  color: var(--white);
+}
+.nav-item .nav-link:hover {
+  color: var(--black);
+}
+.dropdown-menu {
+  background-color: var(--white);
+  border: none;
+}
+.dropdown-item {
+  transition: 0.25s;
+}
+.dropdown-item:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+#searchBar {
+  background-color: var(--white);
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid var(--white);
+  border-right: none;
+  color: var(--white);
+}
+.btn:hover {
+  border: none;
+  background-color: var(--white);
+  color: var(--blue);
+}
+.card {
+  flex-grow: 1;
+  width: 100%;
+  cursor: pointer;
+  min-height: 150px;
+}
+@media (min-width: 450px) {
+  .card {
+    width: calc(100% / 2 - 0.25rem);
+  }
+}
+@media (min-width: 769px) {
+  .card {
+    width: calc(100% / 3 - 0.5rem);
+  }
+}
+#spics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spics {
+  width: 100%;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.navbar-toggler-icon {
+  transition: .25s color;
+  color: var(--blue);
+}
+.navbar-toggler-icon:hover {
+  color: var(--black);
+}
